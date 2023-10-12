@@ -1,0 +1,14 @@
+[package]
+name = "mnist_pytorch"
+version = "0.1.0"
+
+[dependencies]
+orion = { git = "https://github.com/gizatechxyz/orion.git" }
+layer1 = {path = "crates/layer1"}
+layer3 = {path = "crates/layer3"}
+
+[workspace]
+members = [
+    "crates/layer1",
+    "crates/layer3",
+]
